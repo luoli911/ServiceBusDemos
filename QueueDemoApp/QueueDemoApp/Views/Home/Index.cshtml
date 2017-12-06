@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<p>Current number of orders in queue waiting to be processed: @ViewBag.MessageCount</p>
+<br />
+<div>
+    @Html.Label("Send Message")
+    @Html.ActionLink("Create an OnlineOrder", "Submit")
+</div>
+<br />
+<div>
+    @Html.Label("Receive Message")
+    @Html.ActionLink("Receive an OnlineOrder", "Receive")
+</div>

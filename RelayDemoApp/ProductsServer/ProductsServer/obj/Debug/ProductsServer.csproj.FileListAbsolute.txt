@@ -1,0 +1,9 @@
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\bin\Debug\ProductsServer.exe.config
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\bin\Debug\ProductsServer.exe
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\bin\Debug\ProductsServer.pdb
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\bin\Debug\Microsoft.ServiceBus.dll
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\bin\Debug\Microsoft.ServiceBus.xml
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\obj\Debug\ProductsServer.csprojResolveAssemblyReference.cache
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\obj\Debug\ProductsServer.csproj.CoreCompileInputs.cache
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\obj\Debug\ProductsServer.exe
+c:\users\v-liiluo\documents\visual studio 2017\Projects\ProductsServer\ProductsServer\obj\Debug\ProductsServer.pdb
