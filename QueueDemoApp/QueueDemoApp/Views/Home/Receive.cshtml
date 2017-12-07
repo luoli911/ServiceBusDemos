@@ -1,0 +1,46 @@
+﻿@model QueueDemoApp.Models.OnlineOrder
+
+@{
+    ViewBag.Title = "Receive";
+}
+
+<h2>Receive</h2>
+@*<table>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Customer)</th>
+        <th>@Html.DisplayNameFor(model => model.Product)</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Customer)</td>
+            <td>@Html.DisplayFor(modelItem => item.Product)</td>
+        </tr>
+    }
+</table>*@
+<div>
+    <h4>OnlineOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

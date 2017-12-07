@@ -2,6 +2,7 @@
 using QueueDemoApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -55,11 +56,11 @@ namespace QueueDemoApp.Controllers
             List<OnlineOrder> orders = new List<OnlineOrder>();
             if (queue.MessageCount != 0)
             {
-                QueueConnector.OrdersQueueClient.OnMessage((receivedMessage) =>
-                {
-                    order = receivedMessage.GetBody<OnlineOrder>();
-                    receivedMessage.Complete();
-                });
+                BrokeredMessage message = QueueConnector.OrdersQueueClient.Receive();
+                order = message.GetBody<OnlineOrder>();
+                Debug.WriteLine("Message body: {0}  {1}", order.Customer, order.Product);
+                Debug.WriteLine("Message id: {0}", message.MessageId);
+                message.Complete();
 
                 return View(order);
             }
